@@ -1,16 +1,38 @@
-
-header{
-    margin: 5%;
+body{
+    margin: 0;
 }
+
 @media (max-width:700px) {
+    header{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
     .flex_content{
         display: grid;
+        justify-items: center;
         margin: 7%;   
     }
 
     
 }
 @media (min-width:700px) {
+    header{
+        margin: 7%;
+        font-family: 'Poppins', sans-serif;
+    }
+    .flex_content{
+        display: grid;
+        justify-items: center;
+        margin: 7%;   
+    }
+
+    
+}
+@media (min-width:1000px) {
+    header{
+        margin: 7%;
+        font-family: 'Poppins', sans-serif;
+    }
     .flex_content{
         display: grid;
         grid-template-columns:700px 500px;
@@ -21,6 +43,12 @@ header{
 }
 .title{
     padding-right: 20%;
+}
+.banner:hover{
+   
+    width: 100%;
+    transition: width .5s ease-in-out ;
+ 
 }
 .banner img{
     width: 80%;
@@ -45,7 +73,8 @@ button{
     .collections{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin:0% 10%;
+        justify-items: center;
+        margin:3% auto;
     }
     .sells{
         margin-top: 7%;
@@ -62,9 +91,54 @@ button{
     .sells p ,h2{
         color: rgb(100, 100, 100);
     }
+    #see_more{
+        display: flex;
+       justify-content: right;
+       margin-right:20% ;
+       color:rgb(192, 45, 69);
+       font-weight: bold;
+       font-size: large;
+    }
     
 }
+.fa-star{
+   color: rgb(180, 105, 19 );
+   
+}
 @media (min-width:700px) {
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin:3% 10%;
+        padding-left: 20px;
+    }
+    .sells{
+        margin-top: 7%;
+        width: 280px;
+        height: 430px;
+        padding:3%;
+        box-shadow: 10px 10px 40px gray;
+    
+    }
+    .sells img{
+        width: 280px;
+    
+    }
+    .sells p ,h2{
+        color: rgb(70, 68, 68);
+    }
+    #see_more{
+        display: flex;
+       justify-content: right;
+       margin-right:15% ;
+       color:rgb(192, 45, 69);
+       font-weight: bold;
+       font-size: large;
+    }
+    
+}
+
+@media (min-width:1100px) {
     .collections{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -84,9 +158,33 @@ button{
     
     }
     .sells p ,h2{
-        color: rgb(100, 100, 100);
+        color: rgb(70, 68, 68);
+    }
+    #see_more{
+        display: flex;
+       justify-content: right;
+       margin-right:15% ;
+       color:rgb(192, 45, 69);
+       font-weight: bold;
+       font-size: large;
     }
     
 }
 
+a{
+    text-decoration: none;
+}
+footer{
+    margin-top: 20px;
+    padding: 3%;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(47, 19, 63);
+    text-align: center;
+    color: white;
+    
+}
+footer p{
+    color: gainsboro;
+}
 
