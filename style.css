@@ -1,0 +1,92 @@
+
+header{
+    margin: 5%;
+}
+@media (max-width:700px) {
+    .flex_content{
+        display: grid;
+        margin: 7%;   
+    }
+
+    
+}
+@media (min-width:700px) {
+    .flex_content{
+        display: grid;
+        grid-template-columns:700px 500px;
+        margin: 7%;   
+    }
+
+    
+}
+.title{
+    padding-right: 20%;
+}
+.banner img{
+    width: 80%;
+}
+
+#title_bar{
+    font-size: 50px;
+}
+button{
+    background-color: rgb(192, 45, 69);
+    padding: 10px 40px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    
+}
+.popular_heading {
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin:0% 10%;
+    }
+    .sells{
+        margin-top: 7%;
+        width: 280px;
+        height: 430px;
+        padding:3%;
+        box-shadow: 10px 10px 40px gray;
+    
+    }
+    .sells img{
+        width: 280px;
+    
+    }
+    .sells p ,h2{
+        color: rgb(100, 100, 100);
+    }
+    
+}
+@media (min-width:700px) {
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin:3% 10%;
+        padding-left: 20px;
+    }
+    .sells{
+        margin-top: 7%;
+        width: 280px;
+        height: 430px;
+        padding:3%;
+        box-shadow: 10px 10px 40px gray;
+    
+    }
+    .sells img{
+        width: 280px;
+    
+    }
+    .sells p ,h2{
+        color: rgb(100, 100, 100);
+    }
+    
+}
+
+
